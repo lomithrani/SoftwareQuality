@@ -1,5 +1,6 @@
 package SoftwareQuality.Assignment2;
 
+
 public class MyStack {
 
 	private int top;
