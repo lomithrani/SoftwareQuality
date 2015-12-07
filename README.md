@@ -8,7 +8,6 @@ You can find here the implementation: [MyStack.java](https://github.com/lomithra
 Tests are here: [MyStackTests.java](https://github.com/lomithrani/SoftwareQuality/blob/master/Assignment2/src/test/java/SoftwareQuality/Assignment2/MyStackTests.java)
 >If you were to implement differently the Stack class, find an architecture that permits not to rewrite all of the methods. Give the class diagram.
 
-[AreaBalance.csv](https://github.com/lomithrani/Hadoop/blob/master/AreaBalance.csv)
 >3: ??? If you were to implement differently the Stack class, find an architecture that permits not to rewrite all of the methods. Give the class diagram.
 
 >4: Will you need to rewrite all the unit tests? Which ones would you rewrite (if any) and why ?
