@@ -1,4 +1,4 @@
-# Second Assignment - MyStack - Hanoi Tower Junit - Louis Gentil
+# Second Assignment - MyStack - Hanoi Tower - Junit - Louis Gentil
 
 >1:Write an implementation of a bounded stack of integers using an array of int.
 
@@ -6,9 +6,7 @@ You can find here the implementation: [MyStack.java](https://github.com/lomithra
 >2: Write the different unit tests for all the methods. Pay attention to the order of the tests
 
 Tests are here: [MyStackTests.java](https://github.com/lomithrani/SoftwareQuality/blob/master/Assignment2/src/test/java/SoftwareQuality/Assignment2/MyStackTests.java)
->If you were to implement differently the Stack class, find an architecture that permits not to rewrite all of the methods. Give the class diagram.
-
->3: ??? If you were to implement differently the Stack class, find an architecture that permits not to rewrite all of the methods. Give the class diagram.
+>3: If you were to implement differently the Stack class, find an architecture that permits not to rewrite all of the methods. Give the class diagram.
 
 ![ClassDiagram](https://github.com/lomithrani/SoftwareQuality/blob/master/Assignment2/MyStack.png)
 
