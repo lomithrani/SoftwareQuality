@@ -26,14 +26,14 @@ public class MyStack {
         }
     }
 
-    public void pop()throws IllegalStateException
+    public int pop()throws IllegalStateException
     {
         if(!isEmpty())
         { 
-        	//int previousTop=getStack()[top];
+        	int previousTop=getStack()[top];
         	getStack()[top]=0; 
         	top=top-1;
-        	//return previousTop;
+        	return previousTop;
         }
         
         else{

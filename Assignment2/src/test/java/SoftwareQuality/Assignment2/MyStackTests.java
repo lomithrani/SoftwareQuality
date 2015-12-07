@@ -7,11 +7,10 @@ import junit.framework.TestSuite;
 
 public class MyStackTests extends TestCase {
      protected MyStack stack;
-     protected int size;
+     protected int size=3;
 	
      
      protected void setUp(){
-    	 size = 3;
     	 stack = new MyStack(size);
      }
      
