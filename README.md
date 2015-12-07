@@ -9,6 +9,7 @@ Tests are here: [MyStackTests.java](https://github.com/lomithrani/SoftwareQualit
 >If you were to implement differently the Stack class, find an architecture that permits not to rewrite all of the methods. Give the class diagram.
 
 >3: ??? If you were to implement differently the Stack class, find an architecture that permits not to rewrite all of the methods. Give the class diagram.
+
 ![ClassDiagram](https://github.com/lomithrani/SoftwareQuality/blob/master/Assignment2/MyStack.png)
 
 >4: Will you need to rewrite all the unit tests? Which ones would you rewrite (if any) and why ?
