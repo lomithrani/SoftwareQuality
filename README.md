@@ -13,5 +13,6 @@ Tests are here: [MyStackTests.java](https://github.com/lomithrani/SoftwareQualit
 >4: Will you need to rewrite all the unit tests? Which ones would you rewrite (if any) and why ?
 
 I would just need to rewrite the setup in order to instantiate an item of the new implementation, but if the methods are named the same the tests will be the same. I'll just write new tests if any methods have changed / are new
->5: Will you need to rewrite all the unit tests? Which ones would you rewrite (if any) and why ?
+>5: Give the architecture of the test classes that allows your previous answer (class diagram)
 
+![ClassDiagram](https://github.com/lomithrani/SoftwareQuality/blob/master/Assignment2/MyStackTest2.png)
