@@ -26,10 +26,12 @@ public class MyQueue {
 
     // return the number of items in the queue.
     public int size() {
-        return stack1.getSize() + stack2.getSize();     
+        return stack1.getNumberOfElements() + stack2.getNumberOfElements();     
     }
 
-
+    public boolean isFull(){
+    	return stack1.isFull();
+    }
     // add the item to the queue
     public void enqueue(int item) {
         stack1.push(item);
