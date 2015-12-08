@@ -18,7 +18,7 @@ public class MyQueueTests extends TestCase{
      	try {
      		 queue = new MyQueue(-1);
 	}catch NegativeArraySizeException(ex){
-	    		 assertTrue(ex.getMessage().equals("Negative value for array, can't be done!"));
+	    		 assertTrue(ex.getMessage().equals("Negative size for array, can't be done!"));
 	    	}
 	}
         public void testConstructorPosValue(){
