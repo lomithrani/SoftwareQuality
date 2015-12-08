@@ -35,3 +35,5 @@ As a queue is a fifo and not a lifo it doesn't have the same behavior, plus we h
 
 [Hanoi.java](https://github.com/lomithrani/SoftwareQuality/blob/master/Assignment2/src/main/java/SoftwareQuality/Assignment2/HanoiTower.java)
 >13 Write the tests for the “Towers of Hanoï” game..
+
+[HanoiTests.java](https://github.com/lomithrani/SoftwareQuality/blob/master/Assignment2/src/test/java/SoftwareQuality/Assignment2/HanoiTowerTests.java)
