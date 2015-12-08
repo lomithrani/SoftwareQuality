@@ -18,7 +18,7 @@ public class MyStackTests extends TestCase {
      	try {
      		stack = new MyStack(-1);
      	}catch NegativeArraySizeException(ex){
-    		 assertTrue(ex.getMessage().equals("Negative value for array, can't be done!"));
+    		 assertTrue(ex.getMessage().equals("Negative size for array, can't be done!"));
     	 }
      	
      	
