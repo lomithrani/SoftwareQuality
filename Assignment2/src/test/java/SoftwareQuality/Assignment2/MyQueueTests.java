@@ -4,9 +4,7 @@ import java.util.NoSuchElementException;
 
 import SoftwareQuality.Assignment2.MyQueue;
 
-import junit.framework.Test;
 import junit.framework.TestCase;
-import junit.framework.TestSuite;
 
 public class MyQueueTests extends TestCase{
 	protected MyQueue queue;

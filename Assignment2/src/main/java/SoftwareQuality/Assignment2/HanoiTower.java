@@ -2,145 +2,90 @@ package SoftwareQuality.Assignment2;
 
 import java.util.*;
 
-public class HanoiTower
+import java.util.*;
 
-{
+public class HanoiTower {
 
-	public static int N;
+	private int N;
+	private int nombreDeplacement = 0;
 
-	/* Creating MyStack array */
+	/* Creating Stack array */
 
-	public static MyStack[] tower = new MyStack[4];
+	public MyStack[] tower = new MyStack[3];
 
-	public static void main(String[] args)
-
-	{
-
-		Scanner scan = new Scanner(System.in);
-
-		/* Accepting number of disks */
-
-		System.out.println("Enter number of disks");
-
-		int num = scan.nextInt();
-
-		N = num;
-		
-		initHanoi(N);
-		
-		toh(num);
-
-		scan.close();
-
+	public HanoiTower(int nbDisk) {
+		this.setN(nbDisk);
+		tower[0] = new MyStack(getN());
+		tower[1] = new MyStack(getN());
+		tower[2] = new MyStack(getN());
 	}
 	
-	public static void initHanoi(int n){
-		
-		tower[1] = new MyStack(n);
+	/* Function to push disks into stack */
 
-		tower[2] = new MyStack(n);
-
-		tower[3] = new MyStack(n);
-		
-	}
-
-	/* Function to push disks into MyStack */
-
-	public static void toh(int n)
-
-	{
-
+	public void toh(int n) {
 		for (int d = n; d > 0; d--)
-
-			tower[1].push(d);
-
+			tower[0].push(d);
 		display();
-
-		move(n, 1, 2, 3);
+		
 
 	}
 
 	/* Recursive Function to move disks */
 
-	public static void move(int n, int a, int b, int c)
-
-	{
-
-		if (n > 0)
-
-		{
-
+	public void move(int n, int a, int b, int c) {
+		if (n > 0) {
 			move(n - 1, a, c, b);
-
-			int d = tower[a].head();
-			tower[a].pop();
-
+			int d = tower[a].pop();
 			tower[c].push(d);
-
 			display();
-
+			setNombreDeplacement(getNombreDeplacement() + 1);
+			System.out.println(getNombreDeplacement() + " déplacement(s)\n");
 			move(n - 1, b, a, c);
-
 		}
+	}
+	/* Function to display */
+
+	public void display() {
+		System.out.println(" A | B | C");
+		System.out.println("---------------");
+		for (int i = getN() - 1; i >= 0; i--) {
+			String d1 = " ", d2 = " ", d3 = " ";
+			try {
+				d1 = String.valueOf(tower[0].getStack()[i]);
+			} catch (Exception e) {
+			}
+
+			try {
+				d2 = String.valueOf(tower[1].getStack()[i]);
+			} catch (Exception e) {
+
+			}
+
+			try {
+				d3 = String.valueOf(tower[2].getStack()[i]);
+			} catch (Exception e) {
+
+			}
+			System.out.println(" " + d1 + " | " + d2 + " | " + d3);
+		}
+		System.out.println("\n");
 
 	}
 
-	/* Function to display */
+	public int getN() {
+		return N;
+	}
 
-	public static void display()
+	public void setN(int n) {
+		N = n;
+	}
 
-	{
+	private int getNombreDeplacement() {
+		return nombreDeplacement;
+	}
 
-		System.out.println(" A | B | C");
-
-		System.out.println("---------------");
-
-		for (int i = N - 1; i >= 0; i--) {
-
-			String d1 = " ", d2 = " ", d3 = " ";
-
-			try
-
-			{
-
-				d1 = String.valueOf(tower[1].getStack()[i]);
-
-			}
-
-			catch (Exception e) {
-
-			}
-
-			try
-
-			{
-
-				d2 = String.valueOf(tower[2].getStack()[i]);
-
-			}
-
-			catch (Exception e) {
-
-			}
-
-			try
-
-			{
-
-				d3 = String.valueOf(tower[3].getStack()[i]);
-
-			}
-
-			catch (Exception e) {
-
-			}
-
-			System.out.println(" " + d1 + " | " + d2 + " | " + d3);
-
-		}
-
-		System.out.println("\n");
-
+	private void setNombreDeplacement(int nombreDeplacement) {
+		this.nombreDeplacement = nombreDeplacement;
 	}
 
 }
