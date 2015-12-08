@@ -14,6 +14,24 @@ public class MyQueueTests extends TestCase{
 		queue = new MyQueue(size);		
 	}
 	
+	public void testConstructorNegValue(){
+     	try {
+     		 queue = new MyQueue(-1);
+	}catch NegativeArraySizeException(ex){
+	    		 assertTrue(ex.getMessage().equals("Negative value for array, can't be done!"));
+	    	}
+	}
+        public void testConstructorPosValue(){
+     		queue = new MyQueue(10);
+     		assertTrue(stack.getStack1().length==10);
+     		assertTrue(queue.getStack2().length==10);
+        }
+        public void testConstructorNullValue(){
+     		queue = new MyQueue(0);
+     		assertTrue(queue.getStack1().length==0);
+     		assertTrue(queue.getStack2().length==0);
+        }
+	
 	public void testIsEmptyOnEmpty(){
 		assertTrue(queue.isEmpty());
 	}
