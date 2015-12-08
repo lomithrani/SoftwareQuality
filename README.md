@@ -1,4 +1,4 @@
-# Second Assignment - MyStack - Hanoi Tower - Junit - Louis Gentil
+# Second Assignment - MyStack - Hanoi Tower - Junit - Louis Gentil - Xavier Cauzard
 
 >1:Write an implementation of a bounded stack of integers using an array of int.
 
